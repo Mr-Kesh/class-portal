@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeshua Class Portal</title>
+    <link rel="stylesheet" href="ClassPortal.css">
+    <title>Jeshua Dimawea Class Portal</title>
 </head>
 
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
 
-    <h1>Jeshua Dimawea</h1>
-
-    <div>
-        <h2>About Me</h2>
-
-        <ul>
-            <li><strong>Name:</strong> Jeshua Dimawea</li>
-            <li><strong>Age:</strong> 20 Years Old</li>
-            <li><strong>Ethnicity:</strong> Indonesian</li>
-            <li><strong>Major:</strong> Computer Science</li>
-        </ul>
-
-        <p>
-            Hi! I'm Jeshua Dimawea. I'm a computer science major at CU Boulder. I'm currently a junior. I
-            <b><em>love</em></b> to ski
-            and workout and I like coding. I also like dogs and I have one dog, she's 8 years old and her name is
-            Zezal.
-        </p>
-
-        <img src="images/aaa.png" alt="A picture of my 8-year-old dog, Zezal.">
-
-    </div>
-
-    <div>
-        <h2>My Coding Assignments!</h2>
-
+    <!-- Header with Navigation Bar -->
+    <header>
+        <h1>Jeshua Dimawea's Class Portal</h1>
         <nav>
             <ul>
-                <li><a href="htttps://mr-kesh.github.io/Coding-Posting-a-Web-Page---The-Basics/">Assignment 1: Coding &
-                        Posting a Web
-                        Page - The Basics!</a></li>
-                <li><a href="https://mr-kesh.github.io/SpecificSemanticHTML/">Assignment 2: Tables, Forms, Tabbed
-                        Browsing, and Screen Reading!</a></li>
-                <li><a href="https://mr-kesh.github.io/AccessibleCSS/">Assignment 3: Accessible CSS Layout!</a></li>
+                <li><a href="https://mr-kesh.github.io/Coding-Posting-a-Web-Page---The-Basics/"
+                        aria-label="Lab 2 Coding and Posting a Web Page"><b>Lab #2</b></a></li>
+                <li><a href="https://mr-kesh.github.io/SpecificSemanticHTML/"
+                        aria-label="Lab 3 Tables Forms Tabbed Browsing"><b>Lab #3</b></a></li>
+                <li><a href="https://mr-kesh.github.io/AccessibleCSS/" aria-label="Lab 4 Accessible CSS Layout"><b>Lab
+                            #4</b></a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
+    <!-- Main Content Section -->
+    <main id="main-content">
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm Jeshua Dimawea, a junior Computer Science major at CU Boulder. I was born in Los Angeles but
+                have lived in many places, including Indonesia, Germany, Alaska, and Colorado. My hometown, however, is
+                Jakarta Cipete, Indonesia, where most of my family resides.</p>
+            <p>Indonesia has a tropical climate, which is generally hot and humid with abundant rainfall, supporting a
+                diverse ecosystem. My interests include skiing, working out, and coding. I’m also a dog lover and have
+                an 8-year-old dog named Zezal.</p>
+            <figure>
+                <img src="images/aaa.png" alt="A picture of my 8-year-old dog, Zezal.">
+                <figcaption>Zezal, my 8-year-old dog</figcaption>
+            </figure>
+        </section>
+
+        <!-- Favorite Place Section -->
+        <section>
+            <h2>A Favorite Place</h2>
+            <p>I really enjoyed my visit to Cefalù, Sicily in Italy. With its warm weather, clear ocean, and beautiful
+                architecture, it’s a fantastic place. From hiking to swimming, the town offers a lot of activities, and
+                the people are welcoming and kind. It’s a spot I hope to return to one day.</p>
+            <figure>
+                <img src="C:\Users\XeNoJ\OneDrive\Documents\Tutorials-WebDev\CSCI 3150\Class Portal\images\A+view+over+central+Cefalu+and+the+wide+blue+sea+beyond+it+from+atop+the+La+Rocca+mastiff+behind+the+city.jpeg"
+                    alt="View of Cefalù, Sicily">
+                <figcaption>Cefalù, Sicily</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jeshua Dimawea</p>
+    </footer>
 </body>
 
 </html>
