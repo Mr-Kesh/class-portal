@@ -41,6 +41,10 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+.element-invisible {
+    display: none;
+}
+
 footer {
     background-color: #007acc;
     color: #fff;
