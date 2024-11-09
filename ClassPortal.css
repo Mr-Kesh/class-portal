@@ -86,13 +86,7 @@ h2 {
     color: rgb(215, 255, 255);
 }
 
-.rotated-image {
-    transform: rotate(-90deg); 
-    width: 20rem; 
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
+
 
 figure {
     text-align: center;
