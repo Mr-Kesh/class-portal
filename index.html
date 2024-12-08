@@ -2,451 +2,91 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Jeshua's Class Portal</title>
-
-    <!-- Preconnects to Google's font servers -->
+    <link rel="stylesheet" href="ClassPortal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts: These are the fonts I used for different text styles throughout the page -->
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&family=Mukta:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="ClassPortal.css">
-
-    <!-- Links to my JavaScript file for the hambruger menu stuff -->
-    <script src="ClassPortal.js" defer></script>
-
+    <title>Jeshua Dimawea Class Portal</title>
 </head>
 
-
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
 
+    <!-- Page Header with Navigation -->
     <header>
-        <!-- This is so it doesn't say untitled on HTML Outliner-->
-        <h2 class="hidden">Jeshua's Class Portal</h2>
+        <h1>Jeshua Dimawea's Class Portal</h1>
+        
+        <nav aria-label="Main navigation">
+            <h2 class="element-invisible">Navigation</h2>
+            <ul>
+                <li><a href="https://mr-kesh.github.io/Coding-Posting-a-Web-Page---The-Basics/"
+                        aria-label="Lab 2 Coding and Posting a Web Page"><b>Lab #2</b></a></li>
+                <li><a href="https://mr-kesh.github.io/SpecificSemanticHTML/"
+                        aria-label="Lab 3 Tables Forms Tabbed Browsing"><b>Lab #3</b></a></li>
+                <li><a href="https://mr-kesh.github.io/AccessibleCSS/" aria-label="Lab 4 Accessible CSS Layout"><b>Lab
+                            #4</b></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-heading">
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- About Me Section -->
+        <section aria-labelledby="about-me-title">
+            <h2 id="about-me-title">About Me</h2>
 
-        <header>
-            <!-- Hidden heading for screen readers to identify the section -->
-            <h2 id="hero-heading" class="hidden">Hero Section</h2>
-        </header>
+            <article>
+                <h2 class="element-invisible">About me</h2>
+                <p>Hello! I'm Jeshua Dimawea, a junior Computer Science major at CU Boulder. I was born in Los Angeles
+                    but have lived in many places, including Indonesia, Germany, Alaska, and Colorado. My hometown,
+                    however, is Jakarta Cipete, Indonesia, where most of my family resides.</p>
 
+                <figure>
+                    <img src="images/Me.JPG" alt="Image of me when I was young" class="rotated-image">
+                    <figcaption>Me when I was Young!</figcaption>
+                </figure>
 
-        <!-- Navigation Bar -->
-        <header class="navbar" aria-labelledby="navbar-heading">
+                <p>Indonesia has a tropical climate, which is generally hot and humid with abundant rainfall, supporting
+                    a diverse ecosystem. My interests include skiing, working out, and coding. I’m also a dog lover and
+                    have an 8-year-old dog named Zezal.</p>
 
-            <h2 id="navbar-heading" class="hidden">Navigation Bar</h2>
-
-            <div class="header-title">
-                <a id="site-title" href="/" class="logo">Jeshua Dimawea</a>
-            </div>
-
-            <!-- Hamburger menu for mobile view -->
-            <button class="hamburger-icon" id="hamburger-icon" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Navigation menu -->
-            <nav class="header-nav">
-                <ul class="header-nav-list" id="nav-menu" role="menu">
-                    <li class="header-nav-item" role="menuitem">
-                        <a href="/about">Lab #2</a>
-                    </li>
-                    <li class="header-nav-item" role="menuitem">
-                        <a href="/services">Lab #3</a>
-                    </li>
-                    <li class="header-nav-item" role="menuitem">
-                        <a href="/team">Lab #4</a>
-                    </li>
-                    <li class="header-nav-item" role="menuitem">
-                        <a href="/blog">Final Project</a>
-                    </li>
-                    <li class="header-nav-item special" role="menuitem">
-                        <a href="/blog">Contact Me!</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Hero Content -->
-        <div class="hero-content">
-
-            <header>
-                <!-- Main tagline for the section -->
-                <h1 class="tagline" id="hero-tagline">Jeshua Dimawea's Class Portal!</h1>
-            </header>
-
-            <!-- Sub tagline introducing the user -->
-            <p class="sub-tagline" id="hero-description">
-                Hiiii my name is Jeshua Dimawea, nice to meet you!
-            </p>
-
-            <!-- Button Container -->
-            <div class="toplayer">
-                <!-- Button labeled for accessibility -->
-                <label for="click-toggle" class="btn" role="button" aria-controls="click-modal"
-                    aria-label="Click to toggle information">Click Me!</label>
-            </div>
-
-            <input type="checkbox" id="click-toggle" hidden>
-            <div class="layer" id="click-modal" role="dialog" aria-labelledby="modal-heading" aria-hidden="true">
-
-                <label for="click-toggle" class="close-btn" aria-label="Close modal">&times;</label>
-
-                <p id="modal-heading">
-                    The background is, as you can tell, a cave! I have a strong interest in caves and cave stories,
-                    buttttt I will never go cave diving because of the horror stories I've seen on YouTube.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="blog-section" aria-labelledby="about-heading">
-
-        <header>
-            <h2 id="about-heading" class="section-heading">About Me!</h2>
-        </header>
-
-        <div class="blog-container">
-
-            <!-- Blog Item 1 -->
-            <article class="blog-item animate" aria-labelledby="blog-title-1">
-                <div class="blog-text-content">
-
-                    <header>
-                        <h3 id="blog-title-1" class="blog-title titles">A Little About Myself</h3>
-                    </header>
-
-                    <p class="paragraph">
-                        Hello! I'm Jeshua Dimawea, a junior Computer Science major at CU Boulder. I was born in
-                        Los Angeles but have lived in many places, including Indonesia, Germany, Alaska, and
-                        Colorado. My hometown, however, is Jakarta Cipete, Indonesia, where most of my family
-                        resides.
-                    </p>
-                </div>
-                <figure class="blog-image-container">
-                    <img src="Baby Me.jpg" alt="A photo of me as a baby" class="blog-image">
-                    <figcaption>A photo of me as a baby!</figcaption>
+                <figure>
+                    <img src="images/aaa.png" alt="A picture of my 8-year-old dog, Zezal.">
+                    <figcaption>My dog, Zezal!</figcaption>
                 </figure>
             </article>
+        </section>
 
-            <!-- Blog Item 2 -->
-            <article class="blog-item animate" aria-labelledby="blog-title-2">
-                <div class="blog-text-content">
+        <!-- Favorite Place Section -->
+        <section aria-labelledby="favorite-place-title">
+            <h2 id="favorite-place-title">A Favorite Place</h2>
 
-                    <header>
-                        <h3 id="blog-title-2" class="blog-title titles">Young Me</h3>
-                    </header>
+            <article>
+                <h2 class="element-invisible">Where My Favorfite Place Is</h2>
+                <p>I really enjoyed my visit to Cefalù, Sicily in Italy. With its warm weather, clear ocean, and
+                    beautiful architecture, it’s a fantastic place. From hiking to swimming, the town offers a lot of
+                    activities, and the people are welcoming and kind. It’s a spot I hope to return to one day.</p>
 
-                </div>
-                <figure class="blog-image-container">
-                    <img src="Young Me.JPG" alt="A toddler version of me standing next to Thomas the Train"
-                        class="blog-image">
-                    <figcaption>Me as a toddler standing next to Thomas the Train!</figcaption>
+                <figure>
+<img src="images/A+view+over+central+Cefalu+and+the+wide+blue+sea+beyond+it+from+atop+the+La+Rocca+mastiff+behind+the+city.jpeg" alt="View of Cefalù, Sicily"
+                        alt="View of Cefalù, Sicily">
+                    <figcaption>My favorite Place, Cefalù, Sicily, Italy</figcaption>
                 </figure>
             </article>
-
-            <!-- Blog Item 3 -->
-            <article class="blog-item animate" aria-labelledby="blog-title-3">
-                <div class="blog-text-content">
-
-                    <header>
-                        <h3 id="blog-title-3" class="blog-title titles">A Favorite Place of Mine</h3>
-                    </header>
-
-                    <p class="paragraph">
-                        I really enjoyed my visit to Cefalù, Sicily in Italy. With its warm weather, clear
-                        ocean, and beautiful architecture, it’s a fantastic place. From hiking to swimming, the
-                        town offers a lot of activities, and the people are welcoming and kind. It’s a spot I
-                        hope to return to one day.
-                    </p>
-                </div>
-                <figure class="blog-image-container">
-                    <img src="Italy.jpeg" alt="A scenic view of Cefalù, Sicily, Italy" class="blog-image">
-                    <figcaption>A view of Cefalù, Sicily, Italy!</figcaption>
-                </figure>
-            </article>
-
-            <!-- Blog Item 4 -->
-            <article class="blog-item animate" aria-labelledby="blog-title-4">
-                <div class="blog-text-content">
-
-                    <header>
-                        <h3 id="blog-title-4" class="blog-title titles">My Dog!</h3>
-                    </header>
-
-                    <p class="paragraph">
-                        I have an 8-year-old dog named Zezal! She's my first pet I've ever had, and I love her
-                        to death. She's a yellow labrador retriever and she's such a sporadic dog lol.
-                    </p>
-                </div>
-                <figure class="blog-image-container">
-                    <img src="My Dog.png" alt="My dog Zezal wearing a bandana" class="blog-image">
-                    <figcaption>My dog Zezal, wearing a bandana!</figcaption>
-                </figure>
-            </article>
-
-            <!-- Blog Item 5 -->
-            <article class="blog-item animate" aria-labelledby="blog-title-5">
-                <div class="blog-text-content">
-
-                    <header>
-                        <h3 id="blog-title-5" class="blog-title titles">My Extended Family</h3>
-                    </header>
-
-                    <p class="paragraph">
-                        This is my extended family! However, not all of them are in the picture. All of my family except
-                        for my siblings live in Indonesia. I took this picture when I went on vacation to Singapore 5
-                        years ago.
-                    </p>
-                </div>
-                <figure class="blog-image-container">
-                    <img src="bus.jpg" alt="My extended family posing for a group photo" class="blog-image">
-                    <figcaption>My extended family during our Singapore vacation!</figcaption>
-                </figure>
-            </article>
-        </div>
-    </section>
-
-
-
-    <section class="projects-section" aria-labelledby="projects-heading">
-        <div class="projects-content">
-
-            <header>
-                <h2 id="projects-heading" class="section-heading">My Coding Projects</h2>
-            </header>
-
-            <div class="projects-grid">
-
-                <!-- Project Card 1 -->
-                <a href="https://mr-kesh.github.io/Coding-Posting-a-Web-Page---The-Basics/" class="project-card">
-                    <figure>
-                        <img src="Lab2.jpg" alt="Screenshot of Lab 2 assignment webpage" class="project-image">
-                        <figcaption>Lab #2 - Coding & Posting a Web Page - The Basics</figcaption>
-                    </figure>
-
-                    <header>
-                        <h3 class="project-title">Lab #2 - Coding & Posting a Web Page - The Basics</h3>
-                    </header>
-
-                    <p class="project-date">October 7th, 2024</p>
-                </a>
-
-                <!-- Project Card 2 -->
-                <a href="https://mr-kesh.github.io/SpecificSemanticHTML/" class="project-card">
-                    <figure>
-                        <img src="Lab3.jpg" alt="Screenshot of Lab 3 assignment webpage" class="project-image">
-                        <figcaption>Lab #3 - Tables, Forms, Tabbed Browsing, and Screen Reading</figcaption>
-                    </figure>
-
-                    <header>
-                        <h3 class="project-title">Lab #3 - Tables, Forms, Tabbed Browsing, and Screen Reading</h3>
-                    </header>
-
-                    <p class="project-date">October 21st, 2024</p>
-                </a>
-
-                <!-- Project Card 3 -->
-                <a href="https://mr-kesh.github.io/AccessibleCSS/" class="project-card">
-                    <figure>
-                        <img src="AccessibleCSS.jpg" alt="Screenshot of Lab 4 assignment webpage" class="project-image">
-                        <figcaption>Lab #4 - Accessible CSS Layout</figcaption>
-                    </figure>
-
-                    <header>
-                        <h3 class="project-title">Lab #4 - Accessible CSS Layout</h3>
-                    </header>
-
-                    <p class="project-date">November 4th, 2024</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="hobbies-section" aria-labelledby="hobbies-heading">
-
-        <header>
-            <h2 id="hobbies-heading" class="section-heading">My Hobbies</h2>
-        </header>
-
-        <div class="hobbies-grid">
-
-            <!-- Hobby 1 -->
-            <article class="hobby-item">
-
-                <header>
-                    <h3 id="hobby-skiing">Skiing & Snowboard</h3>
-                </header>
-
-                <p>Hitting the slopes and enjoying the thrill of winter sports.</p>
-                <a href="skiing.html" class="learn-more-btn" aria-labelledby="hobby-skiing">Learn More</a>
-            </article>
-
-            <!-- Hobby 2 -->
-            <article class="hobby-item">
-
-                <header>
-                    <h3 id="hobby-workout">Working Out</h3>
-                </header>
-
-                <p>Staying fit and building strength through regular exercise.</p>
-                <a href="workout.html" class="learn-more-btn" aria-labelledby="hobby-workout">Learn More</a>
-            </article>
-
-            <!-- Hobby 3 -->
-            <article class="hobby-item">
-
-                <header>
-                    <h3 id="hobby-traveling">Traveling</h3>
-                </header>
-
-                <p>Exploring new cultures and discovering amazing destinations.</p>
-                <a href="traveling.html" class="learn-more-btn" aria-labelledby="hobby-traveling">Learn More</a>
-            </article>
-
-            <!-- Hobby 4 -->
-            <article class="hobby-item">
-                <header>
-                    <h3 id="hobby-movies">Watching Movies</h3>
-                </header>
-
-                <p>Immersing in cinematic stories and enjoying the art of film.</p>
-                <a href="movies.html" class="learn-more-btn" aria-labelledby="hobby-movies">Learn More</a>
-            </article>
-
-            <!-- Hobby 5 -->
-            <article class="hobby-item">
-
-                <header>
-                    <h3 id="hobby-coding">Coding</h3>
-                </header>
-
-                <p>Solving problems, building projects, and bringing ideas to life through programming.</p>
-                <a href="coding.html" class="learn-more-btn" aria-labelledby="hobby-coding">Learn More</a>
-            </article>
-
-            <!-- Hobby 6 -->
-            <article class="hobby-item">
-
-                <header>
-                    <h3 id="hobby-martial-arts">Martial Arts</h3>
-                </header>
-
-                <p>Practicing martial arts, improving discipline, and perfecting kicks and techniques.</p>
-                <a href="taekwondo.html" class="learn-more-btn" aria-labelledby="hobby-martial-arts">Learn More</a>
-            </article>
-        </div>
-    </section>
-
-
-
-    <section class="image-collage" aria-labelledby="interests-heading">
-
-        <!-- Section heading for screen readers and structure -->
-        <h2 id="interests-heading" class="section-heading">My Interests</h2>
-
-        <figure class="collage-item large">
-            <img src="Machu Pichu.jpg" alt="A breathtaking view of Machu Pichu overtaken by fog">
-            <figcaption>Machu Pichu - A historical wonder surrounded by fog.</figcaption>
-        </figure>
-
-        <figure class="collage-item small">
-            <img src="Rando.jpg" alt="A historical site bustling with tourists and trees around">
-            <figcaption>A historical site with rich cultural significance.</figcaption>
-        </figure>
-
-        <figure class="collage-item small">
-            <img src="Sabertooth.jpg" alt="Fossil head of a Sabertooth Tiger displayed in a museum">
-            <figcaption>Sabertooth Tiger fossil displayed at a museum.</figcaption>
-        </figure>
-
-        <figure class="collage-item medium">
-            <img src="Turtles.jpg" alt="Turtles swimming gracefully in crystal clear ocean water">
-            <figcaption>Sea turtles swimming in clear ocean water.</figcaption>
-        </figure>
-
-        <figure class="collage-item small">
-            <img src="Zebras.jpg" alt="Two zebras grazing in a lush green jungle">
-            <figcaption>Zebras grazing in a jungle.</figcaption>
-        </figure>
-
-        <figure class="collage-item small">
-            <img src="Indo.jpg" alt="A lush green paddy field in Indonesia">
-            <figcaption>A paddy field in Indonesia's countryside.</figcaption>
-        </figure>
-    </section>
-
-
-
-    <section class="inspiration-section" aria-labelledby="inspiration-heading">
-
-        <header>
-            <h2 id="inspiration-heading" class="section-heading">My Favorite Quote</h2>
-        </header>
-
-        <div class="inspiration-card">
-            <blockquote>
-                "Chase your goals with relentless effort, and success will be yours. But remember, the real reward is
-                using what you've achieved to make a difference in the lives of others."
-            </blockquote>
-            <cite>- PNC_Gamba</cite>
-        </div>
-    </section>
-
-
-
-    <footer aria-labelledby="social-media-heading">
-
-        <header>
-            <h2 id="social-media-heading" class="hidden">My Social Media</h2>
-        </header>
-
-        <!-- Social Media Links -->
-        <div class="footer-content" role="navigation" aria-label="Social Media Links">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter"
-                aria-label="Twitter"></a>
-            <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer" class="social-icon google"
-                aria-label="Google Plus"></a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook"
-                aria-label="Facebook"></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin"
-                aria-label="LinkedIn"></a>
-            <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" class="social-icon reddit"
-                aria-label="Reddit"></a>
-        </div>
-
-        <!-- Footer Credits -->
-        <div>
-            <p>Made With ❤️ by Jeshua Dimawea</p>
-        </div>
+        </section>
+    </main>
+
+    <!-- Page Footer -->
+    <footer>
+        <address>
+            <p>&copy; 2024 Jeshua Dimawea</p>
+        </address>
     </footer>
-
 </body>
 
 </html>
