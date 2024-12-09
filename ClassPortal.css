@@ -71,13 +71,13 @@ body {
 
 .tagline,
 .sub-tagline {
-    color: #808588; /* Default color */
-    transition: color 0.5s ease-in-out; /* Smooth transition for color changes */
+    color: #808588; 
+    transition: color 0.5s ease-in-out; 
 }
 
 .hero-content:hover .tagline,
 .hero-content:hover .sub-tagline {
-    color: white; /* Change to white when hovered */
+    color: white; 
 }
 
 
