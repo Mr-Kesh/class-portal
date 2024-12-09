@@ -42,7 +42,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #777b7e;
+}
+
+.hero:hover {
+    cursor: url('flashlight.png'), auto; 
 }
 
 
@@ -64,6 +68,18 @@ body {
     line-height: 1.5;
     color: #eaeaea;
 }
+
+.tagline,
+.sub-tagline {
+    color: #808588; /* Default color */
+    transition: color 0.5s ease-in-out; /* Smooth transition for color changes */
+}
+
+.hero-content:hover .tagline,
+.hero-content:hover .sub-tagline {
+    color: white; /* Change to white when hovered */
+}
+
 
 
 .hero::before {
@@ -89,9 +105,11 @@ body {
 .hero-content p {
     font-size: 1.5rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9); 
+    color: #808588; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
+
+
 
 
 
@@ -262,7 +280,7 @@ body {
     letter-spacing: 1px;
     text-align: center;
     line-height: 40px;
-    cursor: pointer;
+    cursor: url('flashlight.png'), auto; 
     display: inline-block;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -270,8 +288,8 @@ body {
 
 
 .btn:hover {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white; 
     transform: scale(1.1); 
 }
@@ -289,12 +307,13 @@ body {
     height: 100%;
     background: black;
     opacity: 0;
-    transform: scale(0.1);
+    transform: scale(0.01);
     font-size: 27px;
     z-index: 999;
     transition: all 0.5s ease;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
 }
 
 input#click-toggle:checked ~ .layer {
@@ -899,3 +918,6 @@ footer p {
     text-align: center;
     background-color: black;
 }
+
+
+
