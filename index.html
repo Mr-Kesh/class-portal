@@ -54,7 +54,7 @@
         <!-- Navigation Bar -->
         <header class="navbar" aria-labelledby="navbar-heading">
 
-            <h2 class="hidden">Navigation Bar</h2>
+            <h2 id="navbar-heading" class="hidden">Navigation Bar</h2>
 
             <div class="header-title">
                 <a id="site-title" href="/" class="logo">Jeshua Dimawea</a>
@@ -69,7 +69,7 @@
 
             <!-- Navigation menu -->
             <nav class="header-nav">
-                <h2 class="hidden">Navigation Menu</h2>
+                <h2 id="navbar-heading" class="hidden">Navigation Menu</h2>
                 <ul class="header-nav-list" id="nav-menu" role="menu">
                     <li class="header-nav-item" role="menuitem">
                         <a href="https://mr-kesh.github.io/Coding-Posting-a-Web-Page---The-Basics/">Lab #2</a>
@@ -113,15 +113,14 @@
 
             <input type="checkbox" id="click-toggle" hidden>
             <div class="layer" id="click-modal" role="dialog" aria-labelledby="modal-heading" aria-hidden="true">
-                <button class="close-btn" aria-label="Close modal" onclick="closeModal()">&times;</button>
+
+                <label for="click-toggle" class="close-btn" aria-label="Close modal">&times;</label>
 
                 <p id="modal-heading">
                     The background is, as you can tell, a cave! I have a strong interest in caves and cave stories,
                     buttttt I will never go cave diving because of the horror stories I've seen on YouTube.
                 </p>
             </div>
-
-
         </div>
     </section>
 
