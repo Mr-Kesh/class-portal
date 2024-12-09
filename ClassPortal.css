@@ -41,6 +41,26 @@ body {
 }
 
 
+:focus {
+    outline: none;
+}
+
+
+:focus-visible {
+    outline: 3px solid blue; 
+    outline-offset: 4px; 
+}
+
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+
+
+
 .section-heading {
     margin-bottom: 30px;
     font-family: "Newsreader", serif;
@@ -48,6 +68,10 @@ body {
     grid-area: heading;
     font-size: 3rem;
     margin-bottom: 20px;
+    color: white;
+}
+
+#site-title {
     color: white;
 }
 
